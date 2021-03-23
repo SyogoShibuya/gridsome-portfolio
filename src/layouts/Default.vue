@@ -22,6 +22,7 @@
             v-for="item in items"
             :key="item.title"
             link
+            :to="`#${item.title.toLowerCase().replace(' & ', '-')}`"
           >
             <v-list-item-icon>
               <v-icon>{{ item.icon }}</v-icon>
@@ -45,7 +46,7 @@
       return {
         items: [
           { title: 'About', icon: 'mdi-account-box-outline' },
-          { title: 'Projects', icon: 'mdi-apps' },
+          { title: 'Skills', icon: 'mdi-apps' },
           { title: 'Education & Experience', icon: 'mdi-school-outline' },
           { title: 'Contact', icon: 'mdi-message-text-outline' }
         ],
@@ -64,6 +65,9 @@ query {
 </static-query>
 
 <style>
+html {
+  scroll-behavior: smooth;
+}
 .v-application--wrap {
   flex-direction: row;
 }

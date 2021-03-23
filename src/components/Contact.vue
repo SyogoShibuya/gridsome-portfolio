@@ -1,5 +1,5 @@
 <template>
-  <section class="contact-section">
+  <section id="contact" class="contact-section">
     <v-container>
       <v-row>
         <v-col>
@@ -8,18 +8,18 @@
       </v-row>
       <v-row>
         <v-col sm="6" offset-sm="3" class="d-flex justify-space-around">
-          <img
-          class="contact-icon"
-          src="https://simpleicons.org/icons/github.svg"
-          >
-          <img
-          class="contact-icon"
-          src="https://simpleicons.org/icons/pixiv.svg"
-          >
-          <img
-          class="contact-icon"
-          src="https://simpleicons.org/icons/twitter.svg"
-          >
+          <a href="https://github.com/SyogoShibuya">
+            <img
+            class="contact-icon"
+            src="https://simpleicons.org/icons/github.svg"
+            >
+          </a>
+          <a href="https://twitter.com/hotococoasister">
+            <img
+            class="contact-icon"
+            src="https://simpleicons.org/icons/twitter.svg"
+            >
+          </a>
         </v-col>
       </v-row>
     </v-container>
@@ -28,7 +28,7 @@
 
 <style>
 .contact-section {
-    background-color: #FFD563;
+    background-color: #FFD4BD;
 }
 .contact-icon {
     height: 40px;
