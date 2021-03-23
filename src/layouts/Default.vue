@@ -1,6 +1,6 @@
 <template>
   <v-app>
-      <v-navigation-drawer width="240px" permanent>
+      <v-navigation-drawer width="240px" permanent fixed>
         <v-list-item>
           <v-list-item-content>
             <v-list-item-title class="title">
@@ -34,9 +34,7 @@
         </v-list>
       </v-navigation-drawer>
     <v-main>
-      <v-container>
-        <slot/>
-      </v-container>
+      <slot/>
     </v-main>
   </v-app>
 </template>
@@ -48,7 +46,7 @@
         items: [
           { title: 'About', icon: 'mdi-account-box-outline' },
           { title: 'Projects', icon: 'mdi-apps' },
-          { title: 'Education', icon: 'mdi-school-outline' },
+          { title: 'Education & Experience', icon: 'mdi-school-outline' },
           { title: 'Contact', icon: 'mdi-message-text-outline' }
         ],
         right: null,
@@ -71,5 +69,6 @@ query {
 }
 .v-main {
   flex: 1 0;
+  margin-left: 240px;
 }
 </style>
