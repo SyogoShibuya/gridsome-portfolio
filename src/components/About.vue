@@ -50,6 +50,6 @@
 
 <style scoped>
 .g-image {
-  border-radius: 100%;
+  border-radius: 10%;
 }
 </style>
