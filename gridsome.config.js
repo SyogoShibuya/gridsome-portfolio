@@ -6,5 +6,6 @@
 
 module.exports = {
   siteName: 'Gridsome',
+  siteUrl: 'https://gridsome-starter-site.netlify.com', // サイトのベースURLを設定
   plugins: []
 }
